@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', 'sans-serif';
+    text-align: center;
+}
+
+main {
+    width: 592px;
+    margin: 0 auto 72px;
+}
+
+main img {
+    margin-bottom: 72px;
+}
+
+h1 {
+    font-family: 'Inter', 'sans-serif';
+    font-size: 49px;
+    line-height: 56px;
+    font-weight: normal;
+    margin-bottom: 32px;
+}
+
+/* aplicando bold na span que esta dentro da tag h1 */
+h1 span {
+    font-weight: bold;
+}
+
+span,
+a {
+    color: #FF9900;
+}
+
+p, footer {
+    color: #7D7987;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+
+
+/* aplique o margin apenas na tag <a> se ela tiver um elemento anterior,
+se não tiver não irá aplicar
+nesse caso o elemento anterior é a tag a */
+
+footer a+a/*<- esse link que sera aplicado o margin*/{
+    margin-left: 28px;
+}
+
+.line {
+    width: 568px;
+    margin: 0 auto 8px;
+    height: 0;
+    border: 1px #ECEFF2 solid;
+}
+
+#balls {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
